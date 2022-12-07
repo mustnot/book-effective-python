@@ -1,29 +1,29 @@
 # Effective Python 2nd
 
-- https://search.shopping.naver.com/book/catalog/32492216561?cat_id=50010920&frm=PBOKPRO&query=%ED%8C%8C%EC%9D%B4%EC%8D%AC+%EC%BD%94%EB%94%A9%EC%9D%98+%EA%B8%B0%EC%88%A0&NaPm=ct%3Dlbdqdkew%7Cci%3D372893b14ec09f580289144928929b6d83fff053%7Ctr%3Dboknx%7Csn%3D95694%7Chk%3D19f5b9d3aa86f2a91bf97d70d7f05b46ff0aa0a4 을 읽고 정리한 글입니다.
+- [파이썬 코딩의 기술 (개정2판)](https://search.shopping.naver.com/book/catalog/32492216561?cat_id=50010920&frm=PBOKPRO&query=%ED%8C%8C%EC%9D%B4%EC%8D%AC+%EC%BD%94%EB%94%A9%EC%9D%98+%EA%B8%B0%EC%88%A0&NaPm=ct%3Dlbdqdkew%7Cci%3D372893b14ec09f580289144928929b6d83fff053%7Ctr%3Dboknx%7Csn%3D95694%7Chk%3D19f5b9d3aa86f2a91bf97d70d7f05b46ff0aa0a4) 을 읽고 정리한 글입니다.
 
 ## 목차
 
 ### 1장. 파이썬답게 생각하기
 
-- Better Way 1 사용 중인 파이썬의 버전을 알아두라
-- Better Way 2 PEP 8 스타일 가이드를 따르라
-- Better Way 3 bytes와 str의 차이를 알아두라
-- Better Way 4 C 스타일 형식 문자열을 str.format과 쓰기보다는 f-문자열을 통한 인터폴레이션을 사용하라
-- Better Way 5 복잡한 식을 쓰는 대신 도우미 함수를 작성하라
-- Better Way 6 인덱스를 사용하는 대신 대입을 사용해 데이터를 언패킹하라
-- Better Way 7 range보다는 enumerate를 사용하라 066
-- Better Way 8 여러 이터레이터에 대해 나란히 루프를 수행하려면 zip을 사용하라
-- Better Way 9 for나 while 루프 뒤에 else 블록을 사용하지 말라
-- Better Way 10 대입식을 사용해 반복을 피하라
+- [Better Way 1. 사용 중인 파이썬의 버전을 알아두라](https://github.com/mustnot/book-effective-python/blob/main/ch01_pythonic_thinking.md#1-%EC%82%AC%EC%9A%A9-%EC%A4%91%EC%9D%B8-%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9D%98-%EB%B2%84%EC%A0%84%EC%9D%84-%EC%95%8C%EC%95%84%EB%91%90%EB%9D%BC)
+- [Better Way 2. PEP 8 스타일 가이드를 따르라](https://github.com/mustnot/book-effective-python/blob/main/ch01_pythonic_thinking.md#2-pep8-%EC%8A%A4%ED%83%80%EC%9D%BC-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%A5%BC-%EB%94%B0%EB%A5%B4%EB%9D%BC)
+- [Better Way 3. bytes와 str의 차이를 알아두라](https://github.com/mustnot/book-effective-python/blob/main/ch01_pythonic_thinking.md#3-bytes%EC%99%80-str%EC%9D%98-%EC%B0%A8%EC%9D%B4%EB%A5%BC-%EC%95%8C%EC%95%84%EB%91%90%EB%9D%BC)
+- [Better Way 4. C 스타일 형식 문자열을 str.format과 쓰기보다는 f-문자열을 통한 인터폴레이션을 사용하라](https://github.com/mustnot/book-effective-python/blob/main/ch01_pythonic_thinking.md#4-c-%EC%8A%A4%ED%83%80%EC%9D%BC-%ED%98%95%EC%8B%9D-%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84-strformat%EA%B3%BC-%EC%93%B0%EA%B8%B0%EB%B3%B4%EB%8B%A4%EB%8A%94-f-%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84-%ED%86%B5%ED%95%9C-%EC%9D%B8%ED%84%B0%ED%8F%B4%EB%A0%88%EC%9D%B4%EC%85%98%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC)
+- [Better Way 5. 복잡한 식을 쓰는 대신 도우미 함수를 작성하라](https://github.com/mustnot/book-effective-python/blob/main/ch01_pythonic_thinking.md#5-%EB%B3%B5%EC%9E%A1%ED%95%9C-%EC%8B%9D%EC%9D%84-%EC%93%B0%EB%8A%94-%EB%8C%80%EC%8B%A0-%EB%8F%84%EC%9A%B0%EB%AF%B8-%ED%95%A8%EC%88%98%EB%A5%BC-%EC%9E%91%EC%84%B1%ED%95%98%EB%8B%A4)
+- [Better Way 6. 인덱스를 사용하는 대신 대입을 사용해 데이터를 언패킹하라](https://github.com/mustnot/book-effective-python/blob/main/ch01_pythonic_thinking.md#6-%EC%9D%B8%EB%8D%B1%EC%8A%A4%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EB%8C%80%EC%8B%A0-%EB%8C%80%EC%9E%85%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%B4-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-%EC%96%B8%ED%8C%A8%ED%82%B9%ED%95%98%EB%9D%BC)
+- [Better Way 7. range보다는 enumerate를 사용하라](https://github.com/mustnot/book-effective-python/blob/main/ch01_pythonic_thinking.md#7-range%EB%B3%B4%EB%8B%A4%EB%8A%94-enumerate%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC)
+- [Better Way 8. 여러 이터레이터에 대해 나란히 루프를 수행하려면 zip을 사용하라](https://github.com/mustnot/book-effective-python/blob/main/ch01_pythonic_thinking.md#8-%EC%97%AC%EB%9F%AC-%EC%9D%B4%ED%84%B0%EB%A0%88%EC%9D%B4%ED%84%B0%EC%97%90-%EB%8C%80%ED%95%B4-%EB%82%98%EB%9E%80%ED%9E%88-%EB%A3%A8%ED%94%84%EB%A5%BC-%EC%88%98%ED%96%89%ED%95%98%EB%A0%A4%EB%A9%B4-zip%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC)
+- [Better Way 9. for나 while 루프 뒤에 else 블록을 사용하지 말라](https://github.com/mustnot/book-effective-python/blob/main/ch01_pythonic_thinking.md#9-for%EB%82%98-while-%EB%A3%A8%ED%94%84-%EB%92%A4%EC%97%90-else-%EB%B8%94%EB%A1%9D%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%98%EC%A7%80-%EB%A7%90%EB%9D%BC)
+- [Better Way 10. 대입식을 사용해 반복을 피하라](https://github.com/mustnot/book-effective-python/blob/main/ch01_pythonic_thinking.md#10-%EB%8C%80%EC%9E%85%EC%8B%9D%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%B4-%EB%B0%98%EB%B3%B5%EC%9D%84-%ED%94%BC%ED%95%98%EB%9D%BC)
 
 ### 2장. 리스트와 딕셔너리
 
-- Better Way 11. 시퀀스를 슬라이싱하는 방법을 익혀라
-- Better Way 12. 스트라이드와 슬라이스를 한 식에 함께 사용하지 말라
-- Better Way 13. 슬라이싱보다는 나머지를 모두 잡아내는 언패킹을 사용하라
-- Better Way 14. 복잡한 기준을 사용해 정렬할 때는 key 파라미터를 사용하라
-- Better Way 15. 딕셔너리 삽입 순서에 의존할 때는 조심하라
-- Better Way 16. in을 사용하고 딕셔너리 키가 없을 때 KeyError를 처리하기보다는 get을 사용하라
-- Better Way 17. 내부 상태에서 원소가 없는 경우를 처리할 때는 setdefault보다 defaultdict를 사용하라
-- Better Way 18. **missing**을 사용해 키에 따라 다른 디폴트 값을 생성하는 방법을 알아두라
+- [Better Way 11. 시퀀스를 슬라이싱하는 방법을 익혀라](https://github.com/mustnot/book-effective-python/blob/main/ch02_lists_and_dictionaries.md#11-%EC%8B%9C%ED%80%80%EC%8A%A4%EB%A5%BC-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95%EC%9D%84-%EC%9D%B5%ED%98%80%EB%9D%BC)
+- [Better Way 12. 스트라이드와 슬라이스를 한 식에 함께 사용하지 말라](https://github.com/mustnot/book-effective-python/blob/main/ch02_lists_and_dictionaries.md#13-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1%EB%B3%B4%EB%8B%A4%EB%8A%94-%EB%82%98%EB%A8%B8%EC%A7%80-%EB%AA%A8%EB%91%90-%EC%9E%A1%EC%95%84%EB%82%B4%EB%8A%94-%EC%96%B8%ED%8C%A8%ED%82%B9%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC)
+- [Better Way 13. 슬라이싱보다는 나머지를 모두 잡아내는 언패킹을 사용하라](https://github.com/mustnot/book-effective-python/blob/main/ch02_lists_and_dictionaries.md#13-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1%EB%B3%B4%EB%8B%A4%EB%8A%94-%EB%82%98%EB%A8%B8%EC%A7%80-%EB%AA%A8%EB%91%90-%EC%9E%A1%EC%95%84%EB%82%B4%EB%8A%94-%EC%96%B8%ED%8C%A8%ED%82%B9%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC)
+- [Better Way 14. 복잡한 기준을 사용해 정렬할 때는 key 파라미터를 사용하라](https://github.com/mustnot/book-effective-python/blob/main/ch02_lists_and_dictionaries.md#14-%EB%B3%B5%EC%9E%A1%ED%95%9C-%EA%B8%B0%EC%A4%80%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%B4-%EC%A0%95%EB%A0%AC%ED%95%A0-%EB%95%8C%EB%8A%94-key-%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC)
+- [Better Way 15. 딕셔너리 삽입 순서에 의존할 때는 조심하라](https://github.com/mustnot/book-effective-python/blob/main/ch02_lists_and_dictionaries.md#15-%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC-%EC%82%BD%EC%9E%85-%EC%88%9C%EC%84%9C%EC%97%90-%EC%9D%98%EC%A1%B4%ED%95%A0-%EB%95%8C%EB%8A%94-%EC%A1%B0%EC%8B%AC%ED%95%98%EB%9D%BC)
+- [Better Way 16. in을 사용하고 딕셔너리 키가 없을 때 KeyError를 처리하기보다는 get을 사용하라](https://github.com/mustnot/book-effective-python/blob/main/ch02_lists_and_dictionaries.md#15-%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC-%EC%82%BD%EC%9E%85-%EC%88%9C%EC%84%9C%EC%97%90-%EC%9D%98%EC%A1%B4%ED%95%A0-%EB%95%8C%EB%8A%94-%EC%A1%B0%EC%8B%AC%ED%95%98%EB%9D%BC)
+- [Better Way 17. 내부 상태에서 원소가 없는 경우를 처리할 때는 setdefault보다 defaultdict를 사용하라](https://github.com/mustnot/book-effective-python/blob/main/ch02_lists_and_dictionaries.md#17-%EB%82%B4%EB%B6%80-%EC%83%81%ED%83%9C%EC%97%90%EC%84%9C-%EC%9B%90%EC%86%8C%EA%B0%80-%EC%97%86%EB%8A%94-%EA%B2%BD%EC%9A%B0%EB%A5%BC-%EC%B2%98%EB%A6%AC%ED%95%A0-%EB%95%8C%EB%8A%94-setdefault%EB%B3%B4%EB%8B%A4-defaultdict%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC)
+- [Better Way 18. **missing**을 사용해 키에 따라 다른 디폴트 값을 생성하는 방법을 알아두라](https://github.com/mustnot/book-effective-python/blob/main/ch02_lists_and_dictionaries.md#18-__missing__-%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%B4-%ED%82%A4%EC%97%90-%EB%94%B0%EB%9D%BC-%EB%8B%A4%EB%A5%B8-%EB%94%94%ED%8F%B4%ED%8A%B8-%EA%B0%92%EC%9D%84-%EC%83%9D%EC%84%B1%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95%EC%9D%84-%EC%95%8C%EC%95%84%EB%91%90%EB%9D%BC)

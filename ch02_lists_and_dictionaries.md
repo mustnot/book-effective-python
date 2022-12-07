@@ -231,12 +231,9 @@ baby_names = {
 
 딕셔너리가 삽입 순서를 유지하는 방식은 이제 파이썬 언어 명세의 일부가 됐다.
 
-<aside>
-💡 **OrderedDict vs dict**
-collections 내장 모듈에 삽입 순서를 유지해주는 OrderedDict가 존재했고, python 3.7 이후부터는 표준 dict의 동작과 비슷하기는 하지만 OrderedDict와 dict는 성능 특성이 많이 다르다.
-만약 키 삽입과 popitem 호출이 빈번하다면 OrderedDict가 성능적으로 더 낫다.
-
-</aside>
+> 💡 **OrderedDict vs dict**  
+> collections 내장 모듈에 삽입 순서를 유지해주는 OrderedDict가 존재했고, python 3.7 이후부터는 표준 dict의 동작과 비슷하기는 하지만 OrderedDict와 dict는 성능 특성이 많이 다르다.  
+> 만약 키 삽입과 popitem 호출이 빈번하다면 OrderedDict가 성능적으로 더 낫다.
 
 하지만 딕셔너리 처리 시 삽입 순서 동작이 항상 성립한다고 가정하면 안된다. 파이썬에서는 개발자가 list, dict 등의 표준 **프로토콜**(protocol)을 흉내내는 커스텀 컨테이너 타입을 쉽게 정의할 수 있다.
 
