@@ -243,20 +243,20 @@ Bar: {'stuff': 5, 'meep': 1}
 
 복잡한 함수의 경우 키워드만 사용하는 인자를 사용해서 의도를 명확히 밝히는 것이 좋다.
 ```python 
-    # 위치 기반 인자
-    def safe_division(number, divisor, ignore_overflow, ignore_zero_division):
-        pass
+# 위치 기반 인자
+def safe_division(number, divisor, ignore_overflow, ignore_zero_division):
+    pass
 
-    # 키워드 기반 인자
-    def safe_division_c(number, divisor, *, ignore_overflow=False, ignore_zero_division=False):
-        pass
+# 키워드 기반 인자
+def safe_division_c(number, divisor, *, ignore_overflow=False, ignore_zero_division=False):
+    pass
 ```
 가운데 `*` 기호는 위치 인자의 마지막과 키워드만 사용하는 인자의 시작을 구분해준다. 이 때 키워드 인자를 사용하지 않으면 에러가 발생한다.
 
 또는 인자의 이름이 바뀔 것을 고려하여 위치로만 지정하는 인자를 사용할 수도 있다. 위치로만 지정하는 인자는 반드시 위치만 사용해야 하고 키워드 인자로는 쓸 수 없다.
 ```python
-    def safe_division_d(number, divisor, /, *, ignore_overflow=False, ignore_zero_division=False):
-        pass
+def safe_division_d(number, divisor, /, *, ignore_overflow=False, ignore_zero_division=False):
+    pass
 ```
 인자 목록의 `/`기호는 위치로만 지정하는 인자의 끝을 표시한다.
 
